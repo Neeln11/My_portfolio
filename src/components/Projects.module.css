@@ -1,0 +1,85 @@
+.projects {
+    background: var(--background);
+    position: relative;
+}
+
+.heading {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    background: var(--gradient-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    backdrop-filter: blur(var(--glass-blur));
+    transition: border-color 0.3s ease;
+}
+
+.card:hover {
+    border-color: rgba(112, 66, 248, 0.5);
+}
+
+.cardContent {
+    padding: var(--spacing-md);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-sm);
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+    color: var(--foreground);
+}
+
+.links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.iconLink {
+    color: var(--muted);
+    transition: color 0.2s ease;
+}
+
+.iconLink:hover {
+    color: var(--primary);
+}
+
+.cardDescription {
+    color: var(--muted);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+}
+
+.tag {
+    font-size: 0.75rem;
+    background: rgba(112, 66, 248, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-full);
+    color: var(--primary);
+    border: 1px solid rgba(112, 66, 248, 0.2);
+}
